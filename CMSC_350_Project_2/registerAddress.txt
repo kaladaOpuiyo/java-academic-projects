@@ -1,0 +1,14 @@
+ADD R0 a b
+SUB R1 R0 c
+MUL R2 R1 d
+DIV R3 R2 e
+ADD R4 R3 f
+(((((a + b) - c) * d) / e) + f) 
+
+ADD R0 a b
+SUB R1 c d
+MUL R2 R0 R1
+DIV R3 R2 e
+ADD R4 R3 f
+((((a + b) * (c - d)) / e) + f) 
+
